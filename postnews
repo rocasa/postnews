@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# postnews 0.5.2 - post a usenet article
+# postnews 0.5.3 - post a usenet article
 #
 # (C) 2001 by Michael Waschbuesch <waschbuesch@users.sourceforge.net>
 # http://sourceforge.net/projects/postnews/
@@ -19,7 +19,7 @@ import getopt
 def main():
 	#get arguments and options
 	try:
-		opts, args = getopt.getopt(sys.argv[1:], "hf:p:v", ["help", "file=", "port=", "user=", "pass=", "verbose"])
+		opts, args = getopt.getopt(sys.argv[1:], "hf:p:vr", ["help", "file=", "port=", "user=", "pass=", "verbose", "readermode"])
 	except:
 		usage()
 		sys.exit(2)
@@ -37,6 +37,7 @@ def main():
 	user = ""
 	password = ""
 	verbose = 0
+	readermode = None
 	
 	for o, a in opts:
 		if o in ("-h", "--help"):
@@ -62,12 +63,14 @@ def main():
 			password = a
 		if o in ("-v", "--verbose"):
 			verbose = 1
+		if o in ("-r", "--readermode"):
+			readermode = 1
 			
 	#post message
 	if verbose:
 		print "Connecting to Server..."
 	try:
-		s = nntplib.NNTP(server, port, user, password)
+		s = nntplib.NNTP(server, port, user, password, readermode)
 	except Exception, e:	# it can throw a class exception...
 		sys.stderr.write("Can't connect to server: "+server+"\n")
 		sys.stderr.write(str(e)+"\n")
@@ -94,19 +97,20 @@ def main():
 
 
 def usage():
-	print "postnews 0.5.2 - (C) 2001 by Michael Waschbuesch <MichaelWaschbuesch@web.de>"
+	print "postnews 0.5.3 - (C) 2001 by Michael Waschbuesch <MichaelWaschbuesch@web.de>"
 	print ""
 	print "Usage: postnews [OPTIONS] SERVER"
 	print "Post a usenet article (including headers) from stdin onto SERVER."
 	print "Article must at least contain the headers 'From:', 'Newsgroups:' and 'Subject:',"
 	print "a newline and a body."
 	print ""
-	print "Options: -h, --help      display this text"
-	print "         -v, --verbose   be verbose"
-	print "         -f, --file=FILE read file instead of stdin"
-	print "         -p, --port      port number"
-	print "             --user      user name"
-	print "             --pass      password"
+	print "Options: -h, --help          display this text"
+	print "         -v, --verbose       be verbose"
+	print "         -f, --file=FILE     read file instead of stdin"
+	print "         -p, --port=PORT     port number"
+	print "             --user=NAME     user name"
+	print "             --pass=PASSWD   password"
+	print "         -r, --readermode    send MODE READER before authentication"
 
 
 
