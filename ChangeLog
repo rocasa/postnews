@@ -1,4 +1,5 @@
-0.4.1
+0.5
+* Made program quiet and added option '--verbose'
 * Added some documentation
 	
 0.4
