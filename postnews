@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
-# postnews 0.4 - post a usenet article
+# postnews 0.4.1 - post a usenet article
 #
 # (C) 2001 by Michael Waschbuesch <waschbuesch@users.sourceforge.net>
+# http://sourceforge.net/projects/postnews/
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -89,7 +90,7 @@ def main():
 
 
 def usage():
-    print "postnews 0.4 - (C) 2001 by Michael Waschbuesch <MichaelWaschbuesch@web.de>"
+    print "postnews 0.4.1 - (C) 2001 by Michael Waschbuesch <MichaelWaschbuesch@web.de>"
     print ""
     print "Usage: newsopst [OPTIONS] [SERVER]"
     print "Post a usenet article (including headers) from stdin onto SERVER."
