@@ -1,0 +1,5 @@
+postnews (0.5.1-1) unstable; urgency=low
+
+  * Initial Release (ITP #117320).
+
+ -- peter karlsson <peterk@debian.org>  Sun, 28 Oct 2001 16:30:00 +0100
