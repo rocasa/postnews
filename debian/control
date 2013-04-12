@@ -2,8 +2,8 @@ Source: postnews
 Section: net
 Priority: extra
 Maintainer: Peter Karlsson <peterk@debian.org>
-Build-Depends-Indep: debhelper (>> 3.0.0)
-Standards-Version: 3.6.0
+Build-Depends: debhelper (>> 5.0.0)
+Standards-Version: 3.7.2
 
 Package: postnews
 Architecture: all
