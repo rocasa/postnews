@@ -1,0 +1,47 @@
+.TH POSTNEWS 1 "2001-10-27"
+.SH NAME
+postnews \- Post a Usenet article to a server
+.SH SYNOPSIS
+.B postnews
+.RI [ OPTIONS ]
+.RI [ SERVER ]
+.SH DESCRIPTION
+This manual page documents briefly the
+.B postnews
+command.
+This manual page was written for the Debian GNU/Linux distribution
+because the original program does not have a manual page.
+.PP
+.B Postnews
+is used to post Usenet articles (including headers) from stdin to a server.
+The article must at least contain the headers
+.IR From: ", " Newsgroups: ", " Subject: ,
+a newline and a body.
+.SH OPTIONS
+These programs follow the usual GNU command line syntax, with long
+options starting with two dashes ("-").
+A summary of options is included below.
+For a complete description, see the Info files.
+.TP
+.BR \-h ", " \-\-help
+Show summary of options.
+.TP
+.BR \-v ", " \-\-verbose
+Be verbose.
+.TP
+.BR \-f ", " \-\-file= FILE
+Read file instead of stdin.
+.TP
+.BR \-p ", " \-\-port
+Port number.
+.TP
+.BR \-\-user
+User name.
+.TP
+.BR \-\-pass
+Password.
+.SH AUTHOR
+Postnews is written by
+Michael Waschbüsch <waschbuesch@users.sourceforge.net>.
+This manual page was written by peter karlsson <peterk@debian.org>,
+for the Debian GNU/Linux system (but may be used by others).
