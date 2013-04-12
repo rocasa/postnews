@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-# postnews 0.5.1 - post a usenet article
+# postnews 0.5.2 - post a usenet article
 #
 # (C) 2001 by Michael Waschbuesch <waschbuesch@users.sourceforge.net>
 # http://sourceforge.net/projects/postnews/
@@ -94,9 +94,9 @@ def main():
 
 
 def usage():
-	print "postnews 0.5.1 - (C) 2001 by Michael Waschbuesch <MichaelWaschbuesch@web.de>"
+	print "postnews 0.5.2 - (C) 2001 by Michael Waschbuesch <MichaelWaschbuesch@web.de>"
 	print ""
-	print "Usage: postnews [OPTIONS] [SERVER]"
+	print "Usage: postnews [OPTIONS] SERVER"
 	print "Post a usenet article (including headers) from stdin onto SERVER."
 	print "Article must at least contain the headers 'From:', 'Newsgroups:' and 'Subject:',"
 	print "a newline and a body."
