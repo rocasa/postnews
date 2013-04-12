@@ -1,0 +1,9 @@
+0.5.1
+* Minor bugfixes
+
+0.5
+* Made program quiet and added option '--verbose'
+* Added some documentation
+	
+0.4
+* Initial release
