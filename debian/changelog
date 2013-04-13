@@ -1,10 +1,21 @@
 postnews (0.5.3-4~1) UNRELEASED; urgency=low
 
   TODO:
-    - Update postnews Debian packaging.
+    - Updating postnews Debian packaging as necessary.
   * New Maintainer. (Closes: #693232)
+  * Changes to debian/control:
+    - Add a Homepage entry for Postnews.
+    - Add '${misc:Depends}' to the package Depends. 
+    - Set Robert James Clay <jame@rocasa.us> as package Maintainer.
+    - Update debhelper Build-Depends to be '>= 8.0.0'. 
+  * Changes to debian/rules:
+    - Correct 'dh_clean -k' to 'dh_prep' in install target.
+    - Add the missing build-arch and build-indep targets. 
+  * Update debhelper compatibility in debian/compat to '8'.
+  * Explicitly set Debian source format as 3.0 (quilt).
+  * Add the file debian/patches/Correct_shabang_line.patch.
 
- -- Robert James Clay <jame@rocasa.us>  Sat, 13 Apr 2013 10:10:13 -0400
+ -- Robert James Clay <jame@rocasa.us>  Sat, 13 Apr 2013 14:55:14 -0400
 
 postnews (0.5.3-3) unstable; urgency=low
 
