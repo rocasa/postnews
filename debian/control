@@ -1,7 +1,7 @@
 Source: postnews
 Section: net
 Priority: extra
-Maintainer: Peter Karlsson <peterk@debian.org>
+Maintainer: Robert James Clay <jame@rocasa.us>
 Build-Depends: debhelper (>> 5.0.0)
 Standards-Version: 3.7.2
 
