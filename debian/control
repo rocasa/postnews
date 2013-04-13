@@ -4,6 +4,7 @@ Priority: extra
 Maintainer: Robert James Clay <jame@rocasa.us>
 Build-Depends: debhelper (>= 8.0.0)
 Standards-Version: 3.7.2
+Homepage: http://sourceforge.net/p/postnews/wiki/Home/
 
 Package: postnews
 Architecture: all
