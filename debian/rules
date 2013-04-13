@@ -5,7 +5,10 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-build:
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
+build-stamp:
 
 clean:
 	dh_testdir
@@ -19,7 +22,7 @@ install:
 	dh_installdirs /usr/bin
 	install postnews debian/postnews/usr/bin
 
-binary-indep: install
+binary-indep: build-indep install
 	dh_testdir
 	dh_testroot
 	dh_installdocs
@@ -35,4 +38,4 @@ binary-indep: install
 binary-arch:
 
 binary: binary-indep
-.PHONY: build clean binary-indep binary-arch binary install
+.PHONY: build-indep build-arch build clean binary-indep binary-arch binary install
