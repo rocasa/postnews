@@ -1,0 +1,15 @@
+Description: Correct shabang line in postnews script.
+ The postnews script uses '#!/usr/bin/env python' but Debian Python Policy
+ advises to use the standard '#!/usr/bin/python path. Correct shabang line.
+Author: Robert James Clay <jame@rocasa.us>
+Origin: vendor
+Last-Update: 2013-04-13
+
+--- postnews-0.5.3.orig/postnews
++++ postnews-0.5.3/postnews
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python
+ 
+ # postnews 0.5.3 - post a usenet article
+ #
