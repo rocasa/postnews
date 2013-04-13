@@ -1,3 +1,11 @@
+postnews (0.5.3-4~1) UNRELEASED; urgency=low
+
+  TODO:
+    - Update postnews Debian packaging.
+  * New Maintainer. (Closes: #693232)
+
+ -- Robert James Clay <jame@rocasa.us>  Sat, 13 Apr 2013 10:10:13 -0400
+
 postnews (0.5.3-3) unstable; urgency=low
 
   * Added missing binary-arch target.
