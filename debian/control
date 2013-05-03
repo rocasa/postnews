@@ -3,8 +3,8 @@ Section: net
 Priority: extra
 Maintainer: Robert James Clay <jame@rocasa.us>
 Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.7.2
-Vcs-Git: git://git.code.sf.net/p/postnews/code
+Standards-Version: 3.9.4
+Vcs-Git: git://git.code.sf.net/p/postnews/code -b debian
 Vcs-Browser: http://sourceforge.net/p/postnews/code/
 Homepage: http://sourceforge.net/p/postnews/wiki/Home/
 
