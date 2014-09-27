@@ -98,7 +98,9 @@ def main():
 
 
 def usage():
-	print "postnews 0.5.3 - (C) 2001-2002 by Michael Waschbüsch <MichaelWaschbuesch@web.de>"
+	print "postnews 0.5.3"
+	print " - (C) 2001-2002 by Michael Waschbüsch <MichaelWaschbuesch@web.de>"
+	print " - (C) 2014 by Robert James Clay <jame@rocasa.us>"
 	print ""
 	print "Usage: postnews [OPTIONS] SERVER"
 	print "Post a usenet article (including headers) from stdin onto SERVER."
