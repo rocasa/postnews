@@ -1,4 +1,6 @@
 Installation
 ============
 
-Copy 'postnews' to '/usr/local/bin'.
+Copy 'postnews,py' to '/usr/local/bin', or run 'python setup.py install'.
+
+
