@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding: utf-8
 
 # postnews 0.5.3 - post a usenet article
 #
