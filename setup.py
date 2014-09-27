@@ -9,5 +9,5 @@ setup(name='postnews',
       author=['Michael Waschbüsch','Robert James Clay'],
       author_email=['waschbuesch@users.sourceforge.net','jame@rocasa.us'],
       url='http://sourceforge.net/projects/postnews/',
-      packages='postnews',
+      scripts='postnews.py',
      )
