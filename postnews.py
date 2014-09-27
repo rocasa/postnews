@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# postnews 0.5.3 - post a usenet article
+# postnews 0.6 - post a usenet article
 #
 # (C) 2001-2002 by Michael Waschbüsch <waschbuesch@users.sourceforge.net>
 # (C) 2014 Robert James Clay <jame@rocasa.us>
@@ -99,7 +99,7 @@ def main():
 
 
 def usage():
-	print "postnews 0.5.3"
+	print "postnews 0.6"
 	print " - (C) 2001-2002 by Michael Waschbüsch <MichaelWaschbuesch@web.de>"
 	print " - (C) 2014 by Robert James Clay <jame@rocasa.us>"
 	print ""
