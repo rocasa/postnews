@@ -1,8 +1,10 @@
 #!/usr/bin/env python
+# coding: utf-8
 
-# postnews 0.5.3 - post a usenet article
+# postnews 0.6 - post a usenet article
 #
-# (C) 2001 by Michael Waschbuesch <waschbuesch@users.sourceforge.net>
+# (C) 2001-2002 by Michael Waschbüsch <waschbuesch@users.sourceforge.net>
+# (C) 2014 Robert James Clay <jame@rocasa.us>
 # http://sourceforge.net/projects/postnews/
 #
 # This program is free software; you can redistribute it and/or modify
@@ -97,7 +99,9 @@ def main():
 
 
 def usage():
-	print "postnews 0.5.3 - (C) 2001 by Michael Waschbuesch <MichaelWaschbuesch@web.de>"
+	print "postnews 0.6"
+	print " - (C) 2001-2002 by Michael Waschbüsch <MichaelWaschbuesch@web.de>"
+	print " - (C) 2014 by Robert James Clay <jame@rocasa.us>"
 	print ""
 	print "Usage: postnews [OPTIONS] SERVER"
 	print "Post a usenet article (including headers) from stdin onto SERVER."
