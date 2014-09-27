@@ -1,3 +1,10 @@
+0.6
+* Add setup.py and MANIFEST.in
+* Rename 'postnews' as 'postnews.py'.
+* Update spelling of original authors last name.
+* Correct copyright years to 2001-2002 for original author.
+* Add Robert James Clay to the AUTHORS, README, and postnews.py files.
+
 0.5.3
 * Added the readermode option
 
@@ -10,6 +17,6 @@
 0.5
 * Made program quiet and added option '--verbose'
 * Added some documentation
-	
+
 0.4
 * Initial release
