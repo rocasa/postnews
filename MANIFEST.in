@@ -1,0 +1,2 @@
+include AUTHORS ChangeLog COPYING INSTALL MANIFEST postnews.py setup.py
+include docs/TODO 
