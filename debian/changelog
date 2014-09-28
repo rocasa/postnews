@@ -1,3 +1,10 @@
+postnews (0.6-1~1) UNRELEASED; urgency=medium
+
+    TODO;  Upgrade packaging to make use of setup.py now in upstream.
+  * New Release.
+
+ -- Robert James Clay <jame@rocasa.us>  Sat, 27 Sep 2014 21:52:48 -0400
+
 postnews (0.5.3-4) unstable; urgency=low
 
   * New Maintainer. (Closes: #693232)
