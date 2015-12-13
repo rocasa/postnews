@@ -1,3 +1,9 @@
+0.6.1
+* Expand the writeup in the README file regarding needed headers.
+* Replace tabs with spaces and correct blank lines in postnews.py.
+* Add 'license', 'platforms', & 'long_description' entries to the 'setup' stanza
+  in the setup.py file.
+
 0.6
 * Add setup.py and MANIFEST.in
 * Rename 'postnews' as 'postnews.py'.
