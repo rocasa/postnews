@@ -9,6 +9,7 @@ setup(name='postnews',
       author=['Michael Waschbüsch','Robert James Clay'],
       author_email=['waschbuesch@users.sourceforge.net','jame@rocasa.us'],
       license='GPLv2+',
+      platforms='any',
       url='http://sourceforge.net/projects/postnews/',
       scripts=['postnews.py'],
      )
