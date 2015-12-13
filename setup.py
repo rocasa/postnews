@@ -8,6 +8,7 @@ setup(name='postnews',
       description='Post Usenet articles via NNTP from the command line',
       author=['Michael Waschbüsch','Robert James Clay'],
       author_email=['waschbuesch@users.sourceforge.net','jame@rocasa.us'],
+      license='GPLv2+',
       url='http://sourceforge.net/projects/postnews/',
       scripts=['postnews.py'],
      )
