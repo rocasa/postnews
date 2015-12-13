@@ -5,9 +5,5 @@ TODO for 'postnews' script
 
 - Set version in a variable, so that it can be referenced by the program?
 
-- Finally close Debian wishlist bug #187067, if only by adding a note to
-  the documentation explicitly regarding cancelation messages.
-  http://wiki.killfile.org/projects/usenet/faqs/cancel/
-
 - Change to use argparse (available since python v2.7) for parameter parsing?
 
