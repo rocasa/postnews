@@ -1,4 +1,4 @@
-postnews (0.6.1-1~1) UNRELEASED; urgency=medium
+postnews (0.6.1-1) unstable; urgency=medium
 
   * New upstream release.
   * Rewrite long description in debian/control.
@@ -6,10 +6,11 @@ postnews (0.6.1-1~1) UNRELEASED; urgency=medium
   * Update debian/rules to reflect upstream script name change.
   * Add the new file 'debian/clean' to help with debian/rules change.
   * Update 'Correct_shabang_line.patch' for new upstream v0.6.1 version.
+  * Removed comments and unneeded blank lines from the debian/watch file.
   * Set Standards-Version to 3.9.6 in debian/control, no changes required.
-  * Change debhelper version from '8' to '9' in debian/compat & debian/control.
+  * Change debhelper version from '8' to '9' in debian/compat & debian/con.
 
- -- Robert James Clay <jame@rocasa.us>  Sun, 14 Dec 2015 16:29:23 -0400
+ -- Robert James Clay <jame@rocasa.us>  Mon, 14 Dec 2015 18:36:24 -0500
 
 postnews (0.5.3-4) unstable; urgency=low
 
