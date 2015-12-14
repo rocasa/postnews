@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 # GNU copyright 1997 to 1999 by Joey Hess.
 # Copyright 2001-2007 Peter Karlsson <peterk@debian.org>
-# Copyright 2013 Robert James Clay <jame@rocasa.us>
+# Copyright 2013-2015 Robert James Clay <jame@rocasa.us>
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
@@ -21,6 +21,7 @@ install:
 	dh_testroot
 	dh_prep
 	dh_installdirs /usr/bin
+	cp postnews.py postnews
 	install postnews debian/postnews/usr/bin
 
 binary-indep: build-indep install
