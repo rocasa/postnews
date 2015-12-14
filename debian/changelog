@@ -1,9 +1,15 @@
 postnews (0.6.1-1~1) UNRELEASED; urgency=medium
 
-    TODO;  Upgrade packaging to make use of setup.py now in upstream.
-  * New Release.
+  * New upstream release.
+  * Rewrite long description in debian/control.
+  * Update jame@rocasa.us copyright years in debian/copyright.
+  * Update debian/rules to reflect upstream script name change.
+  * Add the new file 'debian/clean' to help with debian/rules change.
+  * Update 'Correct_shabang_line.patch' for new upstream v0.6.1 version.
+  * Set Standards-Version to 3.9.6 in debian/control, no changes required.
+  * Change debhelper version from '8' to '9' in debian/compat & debian/control.
 
- -- Robert James Clay <jame@rocasa.us>  Sun, 13 Dec 2015 13:57:52 -0400
+ -- Robert James Clay <jame@rocasa.us>  Sun, 14 Dec 2015 16:29:23 -0400
 
 postnews (0.5.3-4) unstable; urgency=low
 
