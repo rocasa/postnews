@@ -3,13 +3,13 @@ Description: Correct shabang line in postnews script.
  advises to use the standard '#!/usr/bin/python path. Correct shabang line.
 Author: Robert James Clay <jame@rocasa.us>
 Origin: vendor
-Last-Update: 2013-04-13
+Last-Update: 2015-12-14
 
---- postnews-0.5.3.orig/postnews
-+++ postnews-0.5.3/postnews
+--- a/postnews.py
++++ b/postnews.py
 @@ -1,4 +1,4 @@
 -#!/usr/bin/env python
 +#!/usr/bin/python
+ # coding: utf-8
  
- # postnews 0.5.3 - post a usenet article
- #
+ # postnews 0.6.1 - post a usenet article
