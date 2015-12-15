@@ -8,9 +8,10 @@ postnews (0.6.1-1) unstable; urgency=medium
   * Update 'Correct_shabang_line.patch' for new upstream v0.6.1 version.
   * Removed comments and unneeded blank lines from the debian/watch file.
   * Set Standards-Version to 3.9.6 in debian/control, no changes required.
-  * Change debhelper version from '8' to '9' in debian/compat & debian/con.
+  * Change the debhelper version from '8' to '9' in the debian/compat and
+    debian/control files.
 
- -- Robert James Clay <jame@rocasa.us>  Mon, 14 Dec 2015 18:36:24 -0500
+ -- Robert James Clay <jame@rocasa.us>  Mon, 14 Dec 2015 21:27:36 -0500
 
 postnews (0.5.3-4) unstable; urgency=low
 
