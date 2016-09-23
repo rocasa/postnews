@@ -28,7 +28,7 @@ def main():
         sys.exit(2)
 
     #parse arguments
-    if len(args) !=1:
+    if len(args) != 1:
         usage()
         sys.exit(2)
 
