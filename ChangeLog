@@ -1,3 +1,8 @@
+0.6.2
+* Insert a docstring at line three of the postnews.py file.
+* Add a space after the '!=' operator on line 31 of postnews.py.
+* Remove unnecessary semicolon from line 35 of the postnews.py file.
+
 0.6.1
 * Expand the writeup in the README file regarding needed headers.
 * Replace tabs with spaces and correct blank lines in postnews.py.
