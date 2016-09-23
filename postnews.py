@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+"""Post a usenet article (including headers) from stdin onto SERVER."""
 
 # postnews 0.6.1 - post a usenet article
 #
