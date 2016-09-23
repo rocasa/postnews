@@ -4,7 +4,7 @@
 # postnews 0.6.1 - post a usenet article
 #
 # (C) 2001-2002 by Michael Waschbüsch <waschbuesch@users.sourceforge.net>
-# (C) 2014-2105 Robert James Clay <jame@rocasa.us>
+# (C) 2014-2016 Robert James Clay <jame@rocasa.us>
 # http://sourceforge.net/projects/postnews/
 #
 # This program is free software; you can redistribute it and/or modify
@@ -101,7 +101,7 @@ def main():
 def usage():
     print "postnews 0.6.1"
     print " - (C) 2001-2002 by Michael Waschbüsch <MichaelWaschbuesch@web.de>"
-    print " - (C) 2014-2015 by Robert James Clay <jame@rocasa.us>"
+    print " - (C) 2014-2016 by Robert James Clay <jame@rocasa.us>"
     print ""
     print "Usage: postnews [OPTIONS] SERVER"
     print "Post a usenet article (including headers) from stdin onto SERVER."
