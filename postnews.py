@@ -32,7 +32,7 @@ def main():
         usage()
         sys.exit(2)
 
-    server = args[0];
+    server = args[0]
 
     #parse options
     file = sys.stdin
