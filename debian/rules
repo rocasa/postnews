@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 # GNU copyright 1997 to 1999 by Joey Hess.
-# Copyright 2001-2007 Peter Karlsson <peterk@debian.org>
+# Copyright 2001-2007 Peter Krefting <peter@softwolves.pp.se>
 # Copyright 2013-2015 Robert James Clay <jame@rocasa.us>
 
 # Uncomment this to turn on verbose mode.

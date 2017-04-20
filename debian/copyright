@@ -9,7 +9,7 @@ License: GPL-2+
 
 Files: debian/*
 Comment: Copyright and License for debian directory files.
-Copyright: 2001-2007, Peter Karlsson <peterk@debian.org>
+Copyright: 2001-2007, Peter Krefting <peter@softwolves.pp.se>
            2013-2015, Robert James Clay <jame@rocasa.us>
 License: GPL-2+
 
