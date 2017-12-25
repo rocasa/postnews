@@ -1,6 +1,20 @@
 #!/usr/bin/env python
 # coding: utf-8
-"""Post a usenet article (including headers) from stdin onto SERVER."""
+"""
+Post a usenet article (including headers) to an NNTP SERVER.
+
+Usage: postnews [OPTIONS] SERVER
+Article must at least contain the headers 'From:', 'Newsgroups:' and 'Subject:',
+a newline and a body.
+
+Options: -h, --help          display this text"
+         -v, --verbose       be verbose"
+         -f, --file=FILE     read file instead of stdin"
+         -p, --port=PORT     port number"
+             --user=NAME     user name"
+             --pass=PASSWD   password"
+         -r, --readermode    send MODE READER before authentication"
+"""
 
 # postnews 0.6.2 - post a usenet article
 #
