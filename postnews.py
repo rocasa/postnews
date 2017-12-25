@@ -39,12 +39,12 @@ def main():
     try:
         opts, args = getopt.getopt(sys.argv[1:], "hf:p:vr", ["help", "file=", "port=", "user=", "pass=", "verbose", "readermode"])
     except:
-        usage()
+        print __doc__
         sys.exit(2)
 
     #parse arguments
     if len(args) != 1:
-        usage()
+        print __doc__
         sys.exit(2)
 
     server = args[0]
@@ -59,7 +59,7 @@ def main():
 
     for o, a in opts:
         if o in ("-h", "--help"):
-            usage()
+            print __doc__
             sys.exit()
         if o in ("-f", "--file"):
             try:
@@ -111,25 +111,6 @@ def main():
         sys.exit(2)
 
     s.quit()
-
-
-def usage():
-    print "postnews 0.6.2"
-    print " - (C) 2001-2002 by Michael Waschbüsch <MichaelWaschbuesch@web.de>"
-    print " - (C) 2014-2016 by Robert James Clay <jame@rocasa.us>"
-    print ""
-    print "Usage: postnews [OPTIONS] SERVER"
-    print "Post a usenet article (including headers) from stdin onto SERVER."
-    print "Article must at least contain the headers 'From:', 'Newsgroups:' and 'Subject:',"
-    print "a newline and a body."
-    print ""
-    print "Options: -h, --help          display this text"
-    print "         -v, --verbose       be verbose"
-    print "         -f, --file=FILE     read file instead of stdin"
-    print "         -p, --port=PORT     port number"
-    print "             --user=NAME     user name"
-    print "             --pass=PASSWD   password"
-    print "         -r, --readermode    send MODE READER before authentication"
 
 
 if __name__ == "__main__":
