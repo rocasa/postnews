@@ -38,7 +38,8 @@ def main():
     """Get arguments and options from the command line and then post the message."""
     #get arguments and options
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "hf:p:vr", ["help", "file=", "port=", "user=", "pass=", "verbose", "readermode"])
+        opts, args = getopt.getopt(sys.argv[1:], "hf:p:vr", ["help", "file=", \
+                    "port=", "user=", "pass=", "verbose", "readermode"])
     except:
         print __doc__
         sys.exit(2)
