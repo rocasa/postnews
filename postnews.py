@@ -52,7 +52,7 @@ def main():
     server = args[0]
 
     #parse options
-    file = sys.stdin
+    article_text = sys.stdin
     port = 119
     user = ""
     password = ""
@@ -65,7 +65,7 @@ def main():
             sys.exit()
         if o in ("-f", "--file"):
             try:
-                file = open(a)
+                article_text = open(a)
             except IOError:
                 sys.stderr.write("File not found: "+a+"\n")
                 sys.exit(2)
@@ -102,7 +102,7 @@ def main():
     if verbose:
         print "Posting article..."
     try:
-        s.post(file)
+        s.post(article_text)
     except Exception, e:    # it can throw a class exception...
         sys.stderr.write("Can't post the given input.\n")
         sys.stderr.write(str(e)+"\n")
