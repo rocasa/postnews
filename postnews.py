@@ -19,7 +19,7 @@ Options: -h, --help          display this text"
 # postnews 0.6.2 - post a usenet article
 #
 # (C) 2001-2002 by Michael Waschbüsch <waschbuesch@users.sourceforge.net>
-# (C) 2014-2016 Robert James Clay <jame@rocasa.us>
+# (C) 2014-2017 Robert James Clay <jame@rocasa.us>
 # http://sourceforge.net/projects/postnews/
 #
 # This program is free software; you can redistribute it and/or modify
