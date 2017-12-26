@@ -1,9 +1,10 @@
 TODO for 'postnews' script
 ==========================
 
-- Run python specific lint check  ("python-pocket-lint").
+- Change to use argparse (available since python v2.7) for command line
+  parameter parsing.
 
-- Set version in a variable, so that it can be referenced by the program?
+- Rewrite script for Python 3, as Python 2.x is expected to reach EOL
+  in 2020.
 
-- Change to use argparse (available since python v2.7) for parameter parsing?
 

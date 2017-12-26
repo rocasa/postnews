@@ -4,7 +4,7 @@
 from distutils.core import setup
 
 setup(name='postnews',
-      version='0.6.1',
+      version='0.7',
       description='Post Usenet articles via NNTP from the command line',
       long_description="""Postnews is used to post Usenet articles (including headers) from
 stdin or a file to a nntp server. The article must at least contain the
