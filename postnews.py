@@ -16,7 +16,7 @@ Options: -h, --help          display this text"
          -r, --readermode    send MODE READER before authentication"
 """
 
-# postnews 0.6.2 - post a usenet article
+# postnews 0.6.3 - post a usenet article
 #
 # (C) 2001-2002 by Michael Waschbüsch <waschbuesch@users.sourceforge.net>
 # (C) 2014-2017 Robert James Clay <jame@rocasa.us>
