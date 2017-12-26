@@ -1,10 +1,25 @@
 #!/usr/bin/env python
 # coding: utf-8
+"""
+Post a usenet article (including headers) to an NNTP SERVER.
 
-# postnews 0.6.1 - post a usenet article
+Usage: postnews [OPTIONS] SERVER
+Article must at least contain the headers 'From:', 'Newsgroups:' and 'Subject:',
+a newline and a body.
+
+Options: -h, --help          display this text"
+         -v, --verbose       be verbose"
+         -f, --file=FILE     read file instead of stdin"
+         -p, --port=PORT     port number"
+             --user=NAME     user name"
+             --pass=PASSWD   password"
+         -r, --readermode    send MODE READER before authentication"
+"""
+__version__ = "0.7"
+# postnews 0.7 - post a usenet article
 #
 # (C) 2001-2002 by Michael Waschbüsch <waschbuesch@users.sourceforge.net>
-# (C) 2014-2105 Robert James Clay <jame@rocasa.us>
+# (C) 2014-2017 Robert James Clay <jame@rocasa.us>
 # http://sourceforge.net/projects/postnews/
 #
 # This program is free software; you can redistribute it and/or modify
@@ -20,22 +35,26 @@ import getopt
 
 
 def main():
+    """Get arguments and options from the command line and then post the message."""
     #get arguments and options
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "hf:p:vr", ["help", "file=", "port=", "user=", "pass=", "verbose", "readermode"])
-    except:
-        usage()
+        opts, args = getopt.getopt(sys.argv[1:], "hf:p:vr", ["help", "file=", \
+                    "port=", "user=", "pass=", "verbose", "readermode"])
+    except getopt.GetoptError as err:
+        # Print error and usage information, and then exit.
+        print str(err)  # will print something like "option -a not recognized"
+        print __doc__
         sys.exit(2)
 
     #parse arguments
-    if len(args) !=1:
-        usage()
+    if len(args) != 1:
+        print __doc__
         sys.exit(2)
 
-    server = args[0];
+    server = args[0]
 
     #parse options
-    file = sys.stdin
+    article_text = sys.stdin
     port = 119
     user = ""
     password = ""
@@ -44,11 +63,11 @@ def main():
 
     for o, a in opts:
         if o in ("-h", "--help"):
-            usage()
+            print __doc__
             sys.exit()
         if o in ("-f", "--file"):
             try:
-                file = open(a)
+                article_text = open(a)
             except IOError:
                 sys.stderr.write("File not found: "+a+"\n")
                 sys.exit(2)
@@ -85,7 +104,7 @@ def main():
     if verbose:
         print "Posting article..."
     try:
-        s.post(file)
+        s.post(article_text)
     except Exception, e:    # it can throw a class exception...
         sys.stderr.write("Can't post the given input.\n")
         sys.stderr.write(str(e)+"\n")
@@ -96,25 +115,6 @@ def main():
         sys.exit(2)
 
     s.quit()
-
-
-def usage():
-    print "postnews 0.6.1"
-    print " - (C) 2001-2002 by Michael Waschbüsch <MichaelWaschbuesch@web.de>"
-    print " - (C) 2014-2015 by Robert James Clay <jame@rocasa.us>"
-    print ""
-    print "Usage: postnews [OPTIONS] SERVER"
-    print "Post a usenet article (including headers) from stdin onto SERVER."
-    print "Article must at least contain the headers 'From:', 'Newsgroups:' and 'Subject:',"
-    print "a newline and a body."
-    print ""
-    print "Options: -h, --help          display this text"
-    print "         -v, --verbose       be verbose"
-    print "         -f, --file=FILE     read file instead of stdin"
-    print "         -p, --port=PORT     port number"
-    print "             --user=NAME     user name"
-    print "             --pass=PASSWD   password"
-    print "         -r, --readermode    send MODE READER before authentication"
 
 
 if __name__ == "__main__":
