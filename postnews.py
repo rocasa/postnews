@@ -15,7 +15,7 @@ Options: -h, --help          display this text"
              --pass=PASSWD   password"
          -r, --readermode    send MODE READER before authentication"
 """
-
+__version__ = "0.6.3"
 # postnews 0.6.3 - post a usenet article
 #
 # (C) 2001-2002 by Michael Waschbüsch <waschbuesch@users.sourceforge.net>
