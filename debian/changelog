@@ -1,3 +1,9 @@
+postnews (0.7-1~1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Robert James Clay <jame@rocasa.us>  Tue, 26 Dec 2017 17:23:00 -0500
+
 postnews (0.6.1-1) unstable; urgency=medium
 
   * New upstream release.
