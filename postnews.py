@@ -40,7 +40,9 @@ def main():
     try:
         opts, args = getopt.getopt(sys.argv[1:], "hf:p:vr", ["help", "file=", \
                     "port=", "user=", "pass=", "verbose", "readermode"])
-    except:
+    except getopt.GetoptError as err:
+        # Print error and usage information, and then exit.
+        print str(err)  # will print something like "option -a not recognized"
         print __doc__
         sys.exit(2)
 
