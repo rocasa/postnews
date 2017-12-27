@@ -1,43 +1,9 @@
 #!/usr/bin/make -f
-# GNU copyright 1997 to 1999 by Joey Hess.
-# Copyright 2001-2007 Peter Krefting <peter@softwolves.pp.se>
-# Copyright 2013-2015 Robert James Clay <jame@rocasa.us>
 
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-build: build-arch build-indep
-build-arch: build-stamp
-build-indep: build-stamp
-build-stamp:
+export PYBUILD_NAME = postnews
 
-clean:
-	dh_testdir
-	dh_testroot
-	dh_clean
-
-install:
-	dh_testdir
-	dh_testroot
-	dh_prep
-	dh_installdirs /usr/bin
-	cp postnews.py postnews
-	install postnews debian/postnews/usr/bin
-
-binary-indep: build-indep install
-	dh_testdir
-	dh_testroot
-	dh_installdocs
-	dh_installman debian/postnews.1
-	dh_installchangelogs ChangeLog
-	dh_compress
-	dh_fixperms
-	dh_installdeb
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
-
-binary-arch:
-
-binary: binary-indep
-.PHONY: build-indep build-arch build clean binary-indep binary-arch binary install
+%:
+	dh $@ --with python2 --buildsystem=pybuild
