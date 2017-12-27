@@ -3,7 +3,7 @@ Section: net
 Priority: optional
 Maintainer: Robert James Clay <jame@rocasa.us>
 Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.6
+Standards-Version: 4.1.2
 Vcs-Git: git://git.code.sf.net/p/postnews/code -b debian
 Vcs-Browser: http://sourceforge.net/p/postnews/code/
 Homepage: http://sourceforge.net/p/postnews/wiki/Home/
