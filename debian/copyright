@@ -4,13 +4,13 @@ Source: http://sourceforge.net/p/postnews/
 
 Files: *
 Copyright: 2001-2002, Michael Waschbüsch <waschbuesch@users.sourceforge.net>
-           2014-2015, Robert James Clay <jame@rocasa.us>
+           2014-2017, Robert James Clay <jame@rocasa.us>
 License: GPL-2+
 
 Files: debian/*
 Comment: Copyright and License for debian directory files.
-Copyright: 2001-2007, Peter Krefting <peter@softwolves.pp.se>
-           2013-2015, Robert James Clay <jame@rocasa.us>
+Copyright: 2001-2007,2017 Peter Krefting <peter@softwolves.pp.se>
+           2013-2017, Robert James Clay <jame@rocasa.us>
 License: GPL-2+
 
 License: GPL-2+
