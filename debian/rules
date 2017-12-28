@@ -7,3 +7,6 @@ export PYBUILD_NAME = postnews
 
 %:
 	dh $@ --with python2 --buildsystem=pybuild
+
+override_dh_auto_configure:
+	cp postnews.py postnews
