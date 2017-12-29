@@ -1,0 +1,14 @@
+Description: Change script name to just 'postnews' in setup.py
+Author: Robert James Clay <jame@rocasa.us>
+Origin: vendor
+Last-Update: 2017-12-29
+
+--- postnews-0.7.orig/setup.py
++++ postnews-0.7/setup.py
+@@ -14,5 +14,5 @@ headers 'From:','Newsgroups:', 'Subject:
+       license='GPLv2+',
+       platforms='any',
+       url='http://sourceforge.net/projects/postnews/',
+-      scripts=['postnews.py'],
++      scripts=['postnews'],
+      )
