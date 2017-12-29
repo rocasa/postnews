@@ -1,8 +1,21 @@
-postnews (0.7-1~1) UNRELEASED; urgency=medium
+postnews (0.7-1) unstable; urgency=medium
 
   * New upstream release.
+  * Add 'docs/TODO' to the debian/docs file.
+  * Rewrite debian/rules to use the 'dh' command.
+  * Add a debian/manpages file to install the 'postnews.1' man page.
+  * Add patches/setup-py.patch to rename script during package build.
+  * Remove debian/patches/Correct_shabang_line.patch as it is no longer needed.
+  * Changes to debian/control:
+    + Declare compliance with Debian Policy 4.1.3.
+    + Edits to the short and the long Descriptions.
+    + Set the 'Priority' from 'extra' back to 'optional'.
+    + Add 'dh-python', 'python-all', and 'python-setuptools' to Build-Depends.
+    + Set the 'Format', 'Vcs-Git', 'Vcs-Browser', & 'Homepage' URLs as HTTPS.
+  * Applied patch to update the surname and email address for the original
+    postnews package maintainer from 'Peter Karlson' to 'Peter Krefting'.
 
- -- Robert James Clay <jame@rocasa.us>  Tue, 26 Dec 2017 17:23:00 -0500
+ -- Robert James Clay <jame@rocasa.us>  Fri, 29 Dec 2017 18:52:35 -0500
 
 postnews (0.6.1-1) unstable; urgency=medium
 
