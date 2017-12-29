@@ -11,8 +11,8 @@ Homepage: https://sourceforge.net/p/postnews/wiki/Home/
 Package: postnews
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}
-Description: Post Usenet articles via NNTP from the command line
+Description: Usenet article postings via NNTP from the command line
  Postnews is a small command line utility written in Python that can be used
- to post Usenet articles (including headers) from stdin or a file to a nntp
+ to post Usenet articles (including headers) from stdin or a file to an NNTP
  server. The article must at least contain the headers 'From:','Newsgroups:',
  'Subject:', a newline and a body.
